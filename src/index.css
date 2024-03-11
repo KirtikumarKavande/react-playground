@@ -1,0 +1,10 @@
+#mainDiv{
+    height: 60Vh;
+    width: 70vw;
+    border: red 1px solid;
+}
+
+[data-theme="dark"]{
+    background-color: black;
+}
+

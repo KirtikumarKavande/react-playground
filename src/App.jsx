@@ -1,20 +1,12 @@
-import { useState } from "react";
-import useDebounce from "./hooks/useDebounce";
+import instance from "./AxiosInstance";
 
 const App = () => {
-  const [text, setText] = useState("");
-
-  return (
-    <div>
-      <input
-        type="text"
-        onChange={useDebounce((e) => {
-          setText(e.target.value);
-        })}
-      />
-      <div>{text}</div>
-    </div>
-  );
+  async function apiCallUsingAxios() {
+    let data=await instance({ method: "GET",timeout:1000 });
+    console.log(data)
+  }
+  apiCallUsingAxios()
+  return <div></div>;
 };
 
 export default App;
