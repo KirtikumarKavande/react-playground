@@ -1,26 +1,13 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Form from "./FormInfo";
-import MyformContextProvider from "./context/MyformContextProvider";
-import React from "react";
-import RootElement from "./RootElement";
+import React from 'react'
+import useFetchData from './useFetchData'
 
 const App = () => {
-  const router = createBrowserRouter([{
-    path: "/",
-    element: <RootElement />,
-    children: [
-      {
-        path: "/",
-        element: <Form />,
-      },
-    ],
-  }]);
 
+ const data= useFetchData('https://jsonplaceholder.typicode.com/users')
+ console.log(data)
   return (
-    <React.Fragment>
-      <RouterProvider router={router} />
-    </React.Fragment>
-  );
-};
+    <div>App</div>
+  )
+}
 
-export default App;
+export default App
