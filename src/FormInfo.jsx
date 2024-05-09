@@ -1,40 +1,9 @@
-import React, { useContext } from "react";
-import FormContext from "./context/formContext";
+import React from 'react'
 
-const Form = () => {
-
-  const [formData, setFormData] = React.useState({
-    email: "",
-    password: "",
-  });
-
- const innerData= useContext(FormContext)
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    innerData.setFormData(formData)
-  };
-  console.log(innerData)
-
+const FormInfo = () => {
   return (
-    <form onSubmit={handleSubmit}>
-        {innerData.data.email}
-      <input
-        type="text"
-        onChange={(e) => {
-          setFormData({ ...formData, email: e.target.value });
-        }}
-        className="border border-black"
-      />
-      <input
-        type="text"
-        onChange={(e) => {
-          setFormData({ ...formData, password: e.target.value });
-        }}
-        className="border border-black"
-      />
-      <button>Submit</button>
-    </form>
-  );
-};
+    <div>FormInfo</div>
+  )
+}
 
-export default Form;
+export default FormInfo

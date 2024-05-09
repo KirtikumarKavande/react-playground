@@ -8,7 +8,6 @@ const MyformContextProvider = ({ children }) => {
   </FormContext.Provider>
 </div>
 
-    // <FormContext.Provider value={{ data: {} }}>{children}</FormContext.Provider>
   );
 };
 
