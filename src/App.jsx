@@ -1,13 +1,9 @@
-import React from 'react'
-import useFetchData from './useFetchData'
-
+import LocationContainer from "./LocationContainer";
 const App = () => {
-
- const data= useFetchData('https://jsonplaceholder.typicode.com/users')
- console.log(data)
-  return (
-    <div>App</div>
-  )
-}
-
-export default App
+return (
+<div>
+<LocationContainer />
+</div>
+);
+};
+export default App;
