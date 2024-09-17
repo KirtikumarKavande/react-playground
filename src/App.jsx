@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import store from "./redux-store/store";
 import ShowName from "./HOF/ShowName";
 import Input from "./Debounce/Input";
+import FormHook from "./hooks-practice/Form";
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
       <Provider store={store}>
         {/* <Form /> */}
         {/* <ShowName name={"kirti"}/> */}
-        <Input/>
+        {/* <Input/> */}
+        <FormHook/>
 
         {/* <DisplayEmail /> */}
       </Provider>
