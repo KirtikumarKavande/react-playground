@@ -1,13 +1,15 @@
 import { useContext, useState } from "react";
 import FormContext from "../context/Context";
+import { useDispatch } from "react-redux";
+import { formInfo } from "../redux-store/form-slice";
 
 const Form = () => {
   const [formData, setFormData] = useState({});
-  const { dispatch } = useContext(FormContext);
+  const dispatch=useDispatch()
 
   function handleSubmit(e) {
     e.preventDefault();
-    dispatch({type:"email",payload:formData.email} )
+    dispatch(formInfo(formData) )
   }
   return (
     <form onSubmit={handleSubmit}>
