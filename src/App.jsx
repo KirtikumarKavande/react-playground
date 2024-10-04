@@ -6,6 +6,7 @@ import store from "./redux-store/store";
 import ShowName from "./HOF/ShowName";
 import Input from "./Debounce/Input";
 import FormHook from "./hooks-practice/Form";
+import Callback from "./useCallbackdemo/Callback";
 
 const App = () => {
   return (
@@ -15,9 +16,10 @@ const App = () => {
         {/* <Form /> */}
         {/* <ShowName name={"kirti"}/> */}
         {/* <Input/> */}
-        <FormHook/>
+        {/* <FormHook/> */}
 
         {/* <DisplayEmail /> */}
+        <Callback/>
       </Provider>
       {/* </FormContexProvider> */}
     </div>
