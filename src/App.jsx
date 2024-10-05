@@ -7,6 +7,7 @@ import ShowName from "./HOF/ShowName";
 import Input from "./Debounce/Input";
 import FormHook from "./hooks-practice/Form";
 import Callback from "./useCallbackdemo/Callback";
+import MemoizationDemo from "./useMemodemo/UseMemoDemo";
 
 const App = () => {
   return (
@@ -19,7 +20,8 @@ const App = () => {
         {/* <FormHook/> */}
 
         {/* <DisplayEmail /> */}
-        <Callback/>
+        {/* <Callback/> */}
+        <MemoizationDemo/>
       </Provider>
       {/* </FormContexProvider> */}
     </div>
