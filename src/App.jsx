@@ -8,12 +8,14 @@ import Input from "./Debounce/Input";
 import FormHook from "./hooks-practice/Form";
 import Callback from "./useCallbackdemo/Callback";
 import MemoizationDemo from "./useMemodemo/UseMemoDemo";
+import SimpleUseCallbackFn from "./useCallbackdemo/SimpleUseCallbackFn";
+import HOC from "./HOC/HOC";
 
 const App = () => {
   return (
     <div>
       {/* <FormContexProvider> */}
-      <Provider store={store}>
+      {/* <Provider store={store}> */}
         {/* <Form /> */}
         {/* <ShowName name={"kirti"}/> */}
         {/* <Input/> */}
@@ -21,9 +23,11 @@ const App = () => {
 
         {/* <DisplayEmail /> */}
         {/* <Callback/> */}
-        <MemoizationDemo/>
-      </Provider>
+        {/* <MemoizationDemo/> */}
+      {/* </Provider> */}
       {/* </FormContexProvider> */}
+      <HOC/>
+      <SimpleUseCallbackFn/>
     </div>
   );
 };
