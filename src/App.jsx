@@ -10,6 +10,7 @@ import Callback from "./useCallbackdemo/Callback";
 import MemoizationDemo from "./useMemodemo/UseMemoDemo";
 import SimpleUseCallbackFn from "./useCallbackdemo/SimpleUseCallbackFn";
 import HOC from "./HOC/HOC";
+import FormConfigExample from "./config-driven-ui-form/Form";
 
 const App = () => {
   return (
@@ -26,7 +27,8 @@ const App = () => {
         {/* <MemoizationDemo/> */}
       {/* </Provider> */}
       {/* </FormContexProvider> */}
-      <HOC/>
+      {/* <HOC/> */}
+      <FormConfigExample/>
       <SimpleUseCallbackFn/>
     </div>
   );
