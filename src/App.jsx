@@ -11,6 +11,7 @@ import MemoizationDemo from "./useMemodemo/UseMemoDemo";
 import SimpleUseCallbackFn from "./useCallbackdemo/SimpleUseCallbackFn";
 import HOC from "./HOC/HOC";
 import FormConfigExample from "./config-driven-ui-form/Form";
+import Portal from "./ReactPortals/Portal";
 
 const App = () => {
   return (
@@ -28,8 +29,11 @@ const App = () => {
       {/* </Provider> */}
       {/* </FormContexProvider> */}
       {/* <HOC/> */}
-      <FormConfigExample/>
-      <SimpleUseCallbackFn/>
+      {/* <FormConfigExample/> */}
+
+      {/* <SimpleUseCallbackFn/> */}
+
+      <Portal/>
     </div>
   );
 };
