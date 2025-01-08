@@ -12,6 +12,7 @@ import SimpleUseCallbackFn from "./useCallbackdemo/SimpleUseCallbackFn";
 import HOC from "./HOC/HOC";
 import FormConfigExample from "./config-driven-ui-form/Form";
 import Portal from "./ReactPortals/Portal";
+import MouseApp from "./render-pattern/MouseApp";
 
 const App = () => {
   return (
@@ -33,7 +34,8 @@ const App = () => {
 
       {/* <SimpleUseCallbackFn/> */}
 
-      <Portal/>
+      {/* <Portal/> */}
+      <MouseApp/>
     </div>
   );
 };
