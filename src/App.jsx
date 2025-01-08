@@ -13,6 +13,7 @@ import HOC from "./HOC/HOC";
 import FormConfigExample from "./config-driven-ui-form/Form";
 import Portal from "./ReactPortals/Portal";
 import MouseApp from "./render-pattern/MouseApp";
+import CompoundComponent from "./compound-component-design-pattern/CompoundComponent";
 
 const App = () => {
   return (
@@ -35,7 +36,8 @@ const App = () => {
       {/* <SimpleUseCallbackFn/> */}
 
       {/* <Portal/> */}
-      <MouseApp/>
+      {/* <MouseApp/> */}
+      <CompoundComponent/>
     </div>
   );
 };
